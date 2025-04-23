@@ -163,8 +163,8 @@ ggplot(both_levels_with_epa, aes(x = qb_epa_year_before, xend = qb_epa_year_afte
   labs(
     x = "Average QB EPA Per Play",
     y = "Quarterback",
-    title = "Change in QB EPA Before and After Reuniting with College Teammate",
-    subtitle = paste0("Average change in EPA with WR: ", avg_change),
+    title = "Change in QB EPA Before and After\nReuniting with College Teammate",
+    subtitle = paste0("Average change in EPA per play with WR: ", avg_change),
     caption = "Data: CFBFastR, NFLVerse\n**Pranav Pitchala**"
   ) +
   nfl_analytics_theme() +
@@ -172,9 +172,10 @@ ggplot(both_levels_with_epa, aes(x = qb_epa_year_before, xend = qb_epa_year_afte
     axis.title.x = element_text(size = 20, margin = margin(t = 20)),  # Top margin pushes x-axis title down
     axis.title.y = element_text(size = 20, margin = margin(r = 20)),  # Right margin pushes y-axis title left
     axis.text.x = element_text(size = 12),    # Increase font size for x-axis labels
-    axis.text.y = element_text(size = 15, aes(color = both_levels_with_epa$team_color)),    # Increase font size for y-axis labels
-    plot.title = element_text(size = 25, face = "bold"),  # Increase font size for the plot title
-    plot.subtitle = element_text(size = 14),  # Increase font size for the subtitle
+    axis.text.y = element_text(size = 15, color = "black"),    # Increase font size for y-axis labels
+    plot.title = element_text(size = 25, face = "bold", margin = margin(b = 10)),  # Increase font size for the plot title
+    plot.subtitle = element_text(size = 14, color = "red"),  # Increase font size for the subtitle
     plot.caption = element_text(size = 10)    # Increase font size for the caption
   ) 
 
+# Let's compare this to how first round receivers affect their quarterbacks in general
