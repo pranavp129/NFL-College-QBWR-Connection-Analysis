@@ -143,6 +143,8 @@ both_levels_with_epa <- both_levels_with_epa %>%
   mutate(epa_change_with_wr = qb_epa_year_after - qb_epa_year_before)
 
 # plot change in epa
+avg_change <- round(mean(both_levels_with_epa$epa_change_with_wr, na.rm = TRUE), 2)
+
 ggplot(both_levels_with_epa, aes(x = qb_epa_year_before, xend = qb_epa_year_after, 
                                  y = reorder(passer, qb_epa_year_after), yend = reorder(passer, qb_epa_year_after))) +
   geom_segment(aes(color = receiver), size = 1.2, 
@@ -162,6 +164,7 @@ ggplot(both_levels_with_epa, aes(x = qb_epa_year_before, xend = qb_epa_year_afte
     x = "Average QB EPA Per Play",
     y = "Quarterback",
     title = "Change in QB EPA Before and After Reuniting with College Teammate",
+    subtitle = paste0("Average change in EPA with WR: ", avg_change),
     caption = "Data: CFBFastR, NFLVerse\n**Pranav Pitchala**"
   ) +
   nfl_analytics_theme() +
@@ -173,5 +176,5 @@ ggplot(both_levels_with_epa, aes(x = qb_epa_year_before, xend = qb_epa_year_afte
     plot.title = element_text(size = 25, face = "bold"),  # Increase font size for the plot title
     plot.subtitle = element_text(size = 14),  # Increase font size for the subtitle
     plot.caption = element_text(size = 10)    # Increase font size for the caption
-  )
+  ) 
 
