@@ -11,9 +11,9 @@ With growing buzz around potential college WR-QB reunions in the NFL Draft (e.g.
 ```
 QB_WR_College_Connection/
 ├── Data Visuals/ # Contains all generated plots for the analysis 
-│ ├── nfl_cfb_catches.png 
-│ ├── reunited_epa_change.png 
-│ └── first_round_wr_epa.png 
+│ ├── 1_Catches_Between_Teammates.png 
+│ ├── 2_Change_QB_EPA_For_Teammates.png 
+│ └── 3_Change_QB_EPA_For_First_Rounders.png 
 │
 └── qb_wr_connection.R # Main R script with data loading, cleaning, and visualization
 └── theme.R # Stores NFL Analytics Theme
@@ -33,9 +33,9 @@ QB_WR_College_Connection/
 - Murray and Brown’s negative EPA skewed the average significantly.
 
 ## Visuals
-- **nfl_cfb_catches.png**: Compares catches in college vs. NFL for QB-WR duos.
-- **reunited_epa_change.png**: Shows change in QB EPA after reuniting with a college WR.
-- **first_round_wr_epa.png**: Compares general QB EPA change after drafting a 1st-round WR.
+- **1_Catches_Between_Teammates.png**: Compares catches in college vs. NFL for QB-WR duos.
+- **2_Change_QB_EPA_For_Teammates.png**: Shows change in QB EPA after reuniting with a college WR.
+- **3_Change_QB_EPA_For_First_Rounders.png**: Compares general QB EPA change after drafting a 1st-round WR.
 
 ## Tools Used
 - **R** for data analysis
