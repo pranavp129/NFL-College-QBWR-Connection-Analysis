@@ -254,7 +254,7 @@ rookie_wr_qbs_epa <- rookie_wr_qbs_epa %>%
   drop_na()
 
 # removing backup quarterbacks to clear up space on chart and get a better idea of how this affects franchise qbs
-exclude_qbs <- c("J.Brissett", "B.Osweiler", "J.Flacco", "D.Lock", "M.Jones", "A.Dalton", "J.McCown", "K.Orton", "C.Wentz", "T.Heinicke", "J.Dobbs", "R.Griffin", "E.Stick", "T.Devito")
+exclude_qbs <- c("M.White", "T.Huntley", "J.Brissett", "B.Osweiler", "J.Flacco", "D.Lock", "M.Jones", "A.Dalton", "J.McCown", "K.Orton", "C.Wentz", "T.Heinicke", "J.Dobbs", "R.Griffin", "E.Stick", "T.DeVito", "N.Mullens")
 
 rookie_wr_qbs_epa <- rookie_wr_qbs_epa %>%
   filter(!(passer_player_name %in% exclude_qbs))
