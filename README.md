@@ -8,6 +8,7 @@ This project explores whether reuniting NFL quarterbacks with their former colle
 With growing buzz around potential college WR-QB reunions in the NFL Draft (e.g., Stroud & Emeka, Young & Jameson), I wanted to see if the data supports the idea that these reunions actually improve quarterback play.
 
 ## Project Structure
+```
 QB_WR_College_Connection/
 ├── Data Visuals/ # Contains all generated plots for the analysis 
 │ ├── nfl_cfb_catches.png 
@@ -16,6 +17,7 @@ QB_WR_College_Connection/
 │
 └── qb_wr_connection.R # Main R script with data loading, cleaning, and visualization
 └── theme.R # Stores NFL Analytics Theme
+```
 
 ## Analysis Overview
 - **Step 1:** Identify WR-QB duos who played together in both college and the NFL.
